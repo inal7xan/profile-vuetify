@@ -1,100 +1,67 @@
 <template>
-  <v-card
-    max-width="800"
-    class="mx-auto"
-  >
+  <v-card max-width="800" class="mx-auto">
     <v-container>
       <v-row dense>
         <v-col cols="12">
-          <v-card
-            color="teal-darken-3"
-            theme="dark"
-          >
-            <v-card-title class="text-h5">
-              Unlimited music now
-            </v-card-title>
+          <v-card color="teal-darken-3" theme="dark">
+            <v-card-title class="text-h5"> Unlimited music now </v-card-title>
 
-            <v-card-subtitle>Listen to your favorite artists and albums whenever and wherever, online and offline.</v-card-subtitle>
+            <v-card-subtitle
+              >Listen to your favorite artists and albums whenever and wherever, online and
+              offline.</v-card-subtitle
+            >
 
             <v-card-actions>
-              <v-btn variant="text">
-                Listen Now
-              </v-btn>
+              <v-btn variant="text"> Listen Now </v-btn>
             </v-card-actions>
           </v-card>
         </v-col>
 
         <v-col cols="12">
-          <v-card
-            color="light-blue-darken-4"
-            theme="dark"
-          >
+          <v-card color="light-blue-darken-4" theme="dark">
             <div class="d-flex flex-no-wrap justify-space-between">
               <div>
-                <v-card-title class="text-h5">
-                  Supermodel
-                </v-card-title>
+                <v-card-title class="text-h5"> Supermodel </v-card-title>
 
                 <v-card-subtitle>Foster the People</v-card-subtitle>
 
                 <v-card-actions>
-                  <v-btn
-                    class="ms-2"
-                    variant="outlined"
-                    size="small"
-                  >
-                    START RADIO
-                  </v-btn>
+                  <v-btn class="ms-2" variant="outlined" size="small"> START RADIO </v-btn>
                 </v-card-actions>
               </div>
 
-              <v-avatar
-                class="ma-3"
-                size="125"
-                rounded="0"
-              >
+              <v-avatar class="ma-3" size="125" rounded="0">
                 <v-img src="https://cdn.vuetifyjs.com/images/cards/foster.jpg"></v-img>
               </v-avatar>
             </div>
           </v-card>
         </v-col>
 
-        <v-col cols="12" >
-          <v-card
-            color="blue-grey-darken-4"
-            theme="dark"
-          >
+        <v-col cols="12">
+          <v-card color="blue-grey-darken-4" theme="dark">
             <div class="d-flex flex-no-wrap justify-space-between">
               <div>
-                <v-card-title class="text-h5">
-                  Halcyon Days
-                </v-card-title>
+                <v-card-title class="text-h5"> Getmə Qal </v-card-title>
 
-                <v-card-subtitle>Ellie Goulding</v-card-subtitle>
+                <v-card-subtitle>NJ</v-card-subtitle>
 
                 <v-card-actions>
-                  <v-btn
-                    class="ms-2"
-                    variant="text"
-                  >
+                  <v-btn class="ms-2" variant="text">
                     <ion-icon name="play-outline"></ion-icon>
                   </v-btn>
                 </v-card-actions>
               </div>
 
-              <v-avatar
-                class="ma-3"
-                size="125"
-                rounded="0"
-              >
-                <v-img src="https://i.ytimg.com/an/rBnh1w9LrZg/474529898290782092_mq.jpg?v=624abeeb"></v-img>
+              <v-avatar class="ma-3" size="125" rounded="0">
+                <v-img
+                  src="https://i.ytimg.com/an/rBnh1w9LrZg/474529898290782092_mq.jpg?v=624abeeb"
+                ></v-img>
               </v-avatar>
             </div>
           </v-card>
         </v-col>
       </v-row>
     </v-container>
-  </v-card>
 
     <v-container>
       <v-card>
@@ -121,6 +88,7 @@
         </v-card-text>
       </v-card>
     </v-container>
+  </v-card>
 </template>
 
 <script>
@@ -129,11 +97,11 @@ export default {
     return {
       isPlaying: false,
       volume: 50
-    };
+    }
   },
   methods: {
     togglePlayback() {
-      this.isPlaying = !this.isPlaying;
+      this.isPlaying = !this.isPlaying
       // Mahnını işə sal dayandır
     },
     previousSong() {
@@ -143,9 +111,7 @@ export default {
       // Sonraki mahnı üçün lazımlı olan kodları yaz
     }
   }
-};
+}
 </script>
 
-<style>
-/* İsteğe bağlı stil özelleştirmeleri buraya ekleyebilirsiniz */
-</style>
+<style lang="less"></style>

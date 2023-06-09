@@ -2,13 +2,12 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 
-
 // Vuetify
 import 'vuetify/styles'
 import { createVuetify } from 'vuetify'
 import * as components from 'vuetify/components'
 import * as directives from 'vuetify/directives'
-import 'vuetify/dist/vuetify.min.css';
+import 'vuetify/dist/vuetify.min.css'
 import { aliases, mdi } from 'vuetify/iconsets/mdi'
 
 export default createVuetify({
@@ -16,16 +15,15 @@ export default createVuetify({
     defaultSet: 'mdi',
     aliases,
     sets: {
-      mdi,
-    },
-  },
+      mdi
+    }
+  }
 })
 
 const vuetify = createVuetify({
   components,
-  directives,
+  directives
 })
-
 
 const app = createApp(App)
 
